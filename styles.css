@@ -25,21 +25,20 @@ section .main {
 
 section .main .gif {
     width: 350px;
-    height: 175px;
+    height: 150px;
     align-items: center;
     justify-content: center;   
     position: absolute;
     max-width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 125px;
 }
 
 section .main .header .left-nav {
-    background-color: #FFF;
-    padding: 15px 20px;
+    padding: 15px 10px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 20%;
     z-index: 100;
 }
   
@@ -63,12 +62,11 @@ section .main .header .left-nav ul li a {
 }
   
 section .main .header .right-nav {
-    background-color: #FFF;
     padding: 15px 20px;
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: -150px;
-    width: 400px;
+    right: 75px;
+    width: 20%;
     z-index: 100;
 }
   
@@ -117,6 +115,22 @@ section .main .searchBx .icons {
     padding: 12px 20px;
     align-items: center;
     pointer-events: none;
+}
+
+section .main .searchBx .profile img{
+    position: absolute;
+    top: -245px;
+    right: -85px;
+    height: 25px;
+    width: 25px;
+}
+
+section .main .searchBx .suite img{
+    position: absolute;
+    top: -255px;
+    right: -145px;
+    height: 50px;
+    width: 50px;
 }
 
 section .main .searchBx .icons img {
