@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -16,11 +16,74 @@ section{
 
 section .main {
     width: 500px;
-    margin: 0 20px;
+    margin-bottom: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+section .main .gif {
+    width: 350px;
+    height: 175px;
+}
+
+section .main .header .left-nav {
+    background-color: #FFF;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 100;
+}
+  
+section .main .header .left-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+section .main .header .left-nav ul li {
+    margin-right: 1.75em;
+}
+  
+section .main .header .left-nav ul li a {
+    color: #5F6368;
+    font-family: product-sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+  
+section .main .header .right-nav {
+    background-color: #FFF;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    width: 50%;
+    z-index: 100;
+}
+  
+section .main .header .right-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+section .main .header .right-nav ul li {
+    margin-right: 1.75em;
+}
+  
+section .main .header .right-nav ul li a {
+    color: #5F6368;
+    font-family: product-sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 section .main .searchBx {
@@ -51,6 +114,13 @@ section .main .searchBx .icons {
     pointer-events: none;
 }
 
+section .main .gif {
+    align-items: center;
+    justify-content: center;   
+    position: relative;
+    max-width: 100%;
+}
+
 section .main .searchBx .icons img {
     max-width: 100%;
 }
@@ -63,11 +133,50 @@ section .main .searchBx .icons img {
     font-size: 14px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5%;
     border: 1px solid transparent;
     outline: none;
+    box-shadow: inset;
+}
+
+.feelingBtn {
+    margin: 0 5px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: inset;
+}
+
+.aboutBtn {
+}
+
+.storeBtn {
+    display: flex;
+}
+
+.searchBx:hover {
+    border: 1px solid #ccc;
+    border-radius: 100%;
 }
 
 .searchBtn:hover {
     border: 1px solid #ccc;
+}
+
+.feelingBtn:hover {
+    border: 1px solid #ccc;
+}
+
+.left-nav:hover {
+    text-decoration: underline;
+}
+
+.right-nav:hover {
+    text-decoration: underline;
 }
