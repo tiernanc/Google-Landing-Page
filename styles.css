@@ -26,6 +26,11 @@ section .main {
 section .main .gif {
     width: 350px;
     height: 175px;
+    align-items: center;
+    justify-content: center;   
+    position: absolute;
+    max-width: 100%;
+    margin-bottom: 150px;
 }
 
 section .main .header .left-nav {
@@ -63,7 +68,7 @@ section .main .header .right-nav {
     position: fixed;
     top: 0;
     right: -150px;
-    width: 50%;
+    width: 400px;
     z-index: 100;
 }
   
@@ -87,9 +92,9 @@ section .main .header .right-nav ul li a {
 }
 
 section .main .searchBx {
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
+    position: absolute;
+    width: 600px;
+    margin-top: 125px;
 }
 
 section .main .searchBx .query {
@@ -114,43 +119,26 @@ section .main .searchBx .icons {
     pointer-events: none;
 }
 
-section .main .gif {
-    align-items: center;
-    justify-content: center;   
-    position: relative;
-    max-width: 100%;
-}
-
 section .main .searchBx .icons img {
     max-width: 100%;
 }
 
-.searchBtn {
-    margin: 0 5px;
-    margin-top: 20px;
-    padding: 12px 20px;
-    color: #555;
+.Btn {
+    position: relative;
+    margin-top: 250px;
+    margin: 250px 4px 4px;
+    text-align: center;
+    padding: 10px 16px;
+    width: 145px;
+    background-color: #f8f9fa;
+    font-family: sans-serif;
     font-size: 14px;
-    border: none;
+    color: #3c4043;
     cursor: pointer;
     border-radius: 5%;
-    border: 1px solid transparent;
+    border: 1px solid #f8f9fa;
     outline: none;
-    box-shadow: inset;
-}
-
-.feelingBtn {
-    margin: 0 5px;
-    margin-top: 20px;
-    padding: 12px 20px;
-    color: #555;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5%;
-    border: 1px solid transparent;
-    outline: none;
-    box-shadow: inset;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);;
 }
 
 .aboutBtn {
@@ -165,11 +153,7 @@ section .main .searchBx .icons img {
     border-radius: 100%;
 }
 
-.searchBtn:hover {
-    border: 1px solid #ccc;
-}
-
-.feelingBtn:hover {
+.Btn:hover {
     border: 1px solid #ccc;
 }
 
