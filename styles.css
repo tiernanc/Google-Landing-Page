@@ -153,9 +153,6 @@ html {
 .google-lucky-button:focus {
     outline: 0;
 }
-.google-carbon {
-    position: absolute;
-}
 .bottom-foot {
     display: flex;
     justify-content: space-between;
@@ -213,37 +210,6 @@ html {
         align-items: center;
     }
     .bottom-foot-content {
-        min-height: 73px;
-        max-height: 75px;
-        position: fixed;
-    }
-    .bottom-foot-left {
-        margin-left: 350px;
-        margin-right: 0px;
-        margin-top: 30px;
-    }
-    .bottom-foot-right {
-        margin-left: 0;
-        margin-right: 350px;
-        margin-top: 30px;
-    }
-    .bottom-foot-top {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 5px;
-    }
-    .bottom-foot-left a,
-    .bottom-foot-right a,
-    .bottom-foot-top a {
-        margin: 0 15px 0 15px;
-    }
-}
-@media (max-width: 590px) {
-    .bottom-foot-content-main {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .bottom-foot-content {
         min-height: 118px;
         max-height: 120px;
         position: fixed;
@@ -263,15 +229,23 @@ html {
         margin-right: 0;
         margin-top: 5px;
     }
+    .google-carbon {
+        height: 12.5px;
+        width: 12.5px;
+        position: absolute;
+        margin-left: 0;
+        margin-right: 187.5px;
+        margin-bottom: 97.5px;
+    }
     .bottom-foot-left a,
     .bottom-foot-right a,
     .bottom-foot-top a {
         margin: 0 15px 0 15px;
     }
 }
-@media (max-width: 687px) {
+@media (max-width: 650px) {
     .google-search {
-        width: 78%;
+        width: 92.5%;
     }
     .google-search-input {
         width: calc(100% - 6rem);
